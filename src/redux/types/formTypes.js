@@ -1,0 +1,6 @@
+export const SET_HEADER = "SET_HEADER";
+export const SET_EXPERIENCES = "SET_EXPERIENCES";
+export const SET_EDUCATION = "SET_EDUCATION";
+export const SET_SKILLS = "SET_SKILLS";
+export const SET_SKILL_INPUT = "SET_SKILL_INPUT";
+export const SET_SUMMARY = "SET_SUMMARY";
