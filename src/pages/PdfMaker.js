@@ -15,7 +15,7 @@ import SkillsForm from "../components/forms/SkillsForm";
 import SummaryForm from "../components/forms/SummaryForm";
 import FinalStep from "../components/forms/FinalStep";
 
-const steps = ["Header", "Experience", "Education", "Skills", "Summary", "Finalize"];
+const steps = ["Header", "Education", "Experience", "Skills", "Summary", "Finalize"];
 
 export default function PdfMaker() {
   const [activeStep, setActiveStep] = useState(0);
