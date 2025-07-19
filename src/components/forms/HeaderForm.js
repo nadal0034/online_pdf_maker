@@ -37,6 +37,30 @@ const HeaderForm = () => {
           onChange={(e) => handleChange("phone", e.target.value)}
         />
       </Grid>
+      <Grid item xs={12} md={4}>
+        <TextField
+          label="City"
+          fullWidth
+          value={header.city}
+          onChange={(e) => handleChange("city", e.target.value)}
+        />
+      </Grid>
+      <Grid item xs={12} md={4}>
+        <TextField
+          label="Country"
+          fullWidth
+          value={header.country}
+          onChange={(e) => handleChange("country", e.target.value)}
+        />
+      </Grid>
+      <Grid item xs={12} md={4}>
+        <TextField
+          label="Pin Code"
+          fullWidth
+          value={header.country}
+          onChange={(e) => handleChange("pinCode", e.target.value)}
+        />
+      </Grid>
     </Grid>
   );
 };

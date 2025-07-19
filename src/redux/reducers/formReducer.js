@@ -8,9 +8,9 @@ import {
 } from "../types/formTypes";
 
 const initialState = {
-  header: { name: "", email: "", phone: "" },
-  experiences: [{ company: "", role: "", duration: "", desc: "" }],
-  education: [{ school: "", degree: "", year: "" }],
+  header: { name: "", email: "", phone: "", city: "", country: "", pinCode: "" },
+  experiences: [{ jobTitle: "", employer: "", city: "", country: "", startDate: "", endDate: "", current: "", description: "" }],
+  education: [{ school: "", location: "", degree: "", month: "", year: "", stillEnrolled: "" }],
   skills: [],
   skillInput: "",
   summary: "",
