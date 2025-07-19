@@ -5,6 +5,7 @@ import {
   SET_SKILLS,
   SET_SKILL_INPUT,
   SET_SUMMARY,
+  SET_SELECTED_TEMPLATE
 } from "../types/formTypes";
 
 const initialState = {
@@ -14,6 +15,7 @@ const initialState = {
   skills: [],
   skillInput: "",
   summary: "",
+  selectedTemplate: "",
 };
 
 const formReducer = (state = initialState, action) => {
@@ -30,6 +32,8 @@ const formReducer = (state = initialState, action) => {
       return { ...state, skillInput: action.payload };
     case SET_SUMMARY:
       return { ...state, summary: action.payload };
+    case SET_SELECTED_TEMPLATE:
+      return { ...state, selectedTemplate: action.payload };
     default:
       return state;
   }

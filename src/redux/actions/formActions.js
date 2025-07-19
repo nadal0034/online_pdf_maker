@@ -5,6 +5,7 @@ import {
   SET_SKILLS,
   SET_SKILL_INPUT,
   SET_SUMMARY,
+  SET_SELECTED_TEMPLATE
 } from "../types/formTypes";
 
 export const setHeader = (payload) => ({
@@ -34,5 +35,10 @@ export const setSkillInput = (payload) => ({
 
 export const setSummary = (payload) => ({
   type: SET_SUMMARY,
+  payload,
+});
+
+export const setSelectedTemplate = (payload) => ({
+  type: SET_SELECTED_TEMPLATE,
   payload,
 });

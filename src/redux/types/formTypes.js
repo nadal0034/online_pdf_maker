@@ -4,3 +4,4 @@ export const SET_EDUCATION = "SET_EDUCATION";
 export const SET_SKILLS = "SET_SKILLS";
 export const SET_SKILL_INPUT = "SET_SKILL_INPUT";
 export const SET_SUMMARY = "SET_SUMMARY";
+export const SET_SELECTED_TEMPLATE = "SET_SELECTED_TEMPLATE";

@@ -14,14 +14,21 @@ import EducationForm from "../components/forms/EducationForm";
 import SkillsForm from "../components/forms/SkillsForm";
 import SummaryForm from "../components/forms/SummaryForm";
 import FinalStep from "../components/forms/FinalStep";
+import { useDispatch } from "react-redux";
+import { setSelectedTemplate } from "../redux/actions/formActions";
 
 const steps = ["Header", "Education", "Experience", "Skills", "Summary", "Finalize"];
 
 export default function PdfMaker() {
+    const dispatch = useDispatch();
   const [activeStep, setActiveStep] = useState(0);
 
   const handleNext = () => setActiveStep((prev) => prev + 1);
   const handleBack = () => setActiveStep((prev) => prev - 1);
+
+  const handleGoBackToTemplate = () => {
+    dispatch(setSelectedTemplate(""));
+  };
 
   const renderStepContent = (step) => {
     switch (step) {
@@ -61,6 +68,11 @@ export default function PdfMaker() {
           disabled={activeStep === steps.length - 1}
         >
           Next
+        </Button>
+      </Box>
+      <Box sx={{ mt: 3 }}>
+        <Button variant="outlined" color="secondary" onClick={handleGoBackToTemplate}>
+          Back to Template Selection
         </Button>
       </Box>
     </Container>
